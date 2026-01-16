@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.cheryge.greenenergy.simpleDemo-mergeDebugResources-19:/values-v32/values-v32.xml",
+            "map": [
+                {
+                    "source": "/Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/res/values-v32/values-v32.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "100",
+                        "endLines": "7",
+                        "endColumns": "12",
+                        "endOffsets": "469"
+                    }
+                }
+            ]
+        }
+    ]
+}

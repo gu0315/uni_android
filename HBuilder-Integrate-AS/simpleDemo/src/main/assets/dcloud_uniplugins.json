@@ -1,0 +1,28 @@
+{
+  "nativePlugins": [
+    {
+      "plugins": [
+        {
+          "type": "module",
+          "name": "TestModule",
+          "class": "io.dcloud.uniplugin.TestModule"
+        }
+      ]
+    },
+    {
+      "hooksClass": "",
+      "plugins": [
+        {
+          "type": "module",
+          "name": "JG-JVerification",
+          "class": "cn.jiguang.uniplugin_jverification.JVerificationWXModule"
+        },
+        {
+          "type": "module",
+          "name": "JG-JCore",
+          "class": "cn.jiguang.uniplugin_jcore.JCoreModule"
+        }
+      ]
+    }
+  ]
+}

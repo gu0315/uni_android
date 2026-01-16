@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "com.cheryge.greenenergy.simpleDemo-debug-21:/drawable_login.png.flat",
+        "source": "com.cheryge.greenenergy.simpleDemo-main-23:/drawable/login.png"
+    },
+    {
+        "merged": "com.cheryge.greenenergy.simpleDemo-debug-21:/drawable_push.png.flat",
+        "source": "com.cheryge.greenenergy.simpleDemo-main-23:/drawable/push.png"
+    },
+    {
+        "merged": "com.cheryge.greenenergy.simpleDemo-debug-21:/drawable_unselected.png.flat",
+        "source": "com.cheryge.greenenergy.simpleDemo-main-23:/drawable/unselected.png"
+    },
+    {
+        "merged": "com.cheryge.greenenergy.simpleDemo-debug-21:/drawable_apple.png.flat",
+        "source": "com.cheryge.greenenergy.simpleDemo-main-23:/drawable/apple.png"
+    },
+    {
+        "merged": "com.cheryge.greenenergy.simpleDemo-debug-21:/drawable_selected.png.flat",
+        "source": "com.cheryge.greenenergy.simpleDemo-main-23:/drawable/selected.png"
+    },
+    {
+        "merged": "com.cheryge.greenenergy.simpleDemo-debug-21:/drawable_icon.png.flat",
+        "source": "com.cheryge.greenenergy.simpleDemo-main-23:/drawable/icon.png"
+    },
+    {
+        "merged": "com.cheryge.greenenergy.simpleDemo-debug-21:/drawable_splash.png.flat",
+        "source": "com.cheryge.greenenergy.simpleDemo-main-23:/drawable/splash.png"
+    },
+    {
+        "merged": "com.cheryge.greenenergy.simpleDemo-debug-21:/drawable_close.png.flat",
+        "source": "com.cheryge.greenenergy.simpleDemo-main-23:/drawable/close.png"
+    },
+    {
+        "merged": "com.cheryge.greenenergy.simpleDemo-debug-21:/drawable_logo.png.flat",
+        "source": "com.cheryge.greenenergy.simpleDemo-main-23:/drawable/logo.png"
+    },
+    {
+        "merged": "com.cheryge.greenenergy.simpleDemo-debug-21:/drawable_line.png.flat",
+        "source": "com.cheryge.greenenergy.simpleDemo-main-23:/drawable/line.png"
+    },
+    {
+        "merged": "com.cheryge.greenenergy.simpleDemo-debug-21:/drawable_weixin.png.flat",
+        "source": "com.cheryge.greenenergy.simpleDemo-main-23:/drawable/weixin.png"
+    },
+    {
+        "merged": "com.cheryge.greenenergy.simpleDemo-debug-21:/drawable_bg.png.flat",
+        "source": "com.cheryge.greenenergy.simpleDemo-main-23:/drawable/bg.png"
+    }
+]

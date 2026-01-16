@@ -1,0 +1,16 @@
+R_DEF: Internal format may change without notice
+local
+drawable apple
+drawable bg
+drawable close
+drawable icon
+drawable line
+drawable login
+drawable logo
+drawable push
+drawable selected
+drawable splash
+drawable unselected
+drawable weixin
+string app_name
+style DCloudActivityTheme

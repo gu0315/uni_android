@@ -1,0 +1,1030 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.cheryge.greenenergy"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="33" />
+10
+11    <!-- 4. 权限补充（Android 13+ 需添加 POST_NOTIFICATIONS） -->
+12    <supports-screens
+12-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:7:5-12:39
+13        android:anyDensity="true"
+13-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:8:9-34
+14        android:largeScreens="true"
+14-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:9:9-36
+15        android:normalScreens="true"
+15-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:10:9-37
+16        android:resizeable="true"
+16-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:11:9-34
+17        android:smallScreens="true" />
+17-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:12:9-36
+18
+19    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+19-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:13:5-77
+19-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:13:22-74
+20
+21    <!-- Barcode(二维码)  begin -->
+22    <uses-permission android:name="android.permission.CAMERA" />
+22-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:16:5-65
+22-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:16:22-62
+23    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+23-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:17:5-81
+23-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:17:22-78
+24
+25    <uses-feature android:name="android.hardware.camera" />
+25-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:18:5-60
+25-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:18:19-57
+26    <uses-feature android:name="android.hardware.camera.autofocus" />
+26-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:19:5-70
+26-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:19:19-67
+27
+28    <uses-permission android:name="android.permission.VIBRATE" />
+28-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:20:5-66
+28-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:20:22-63
+29    <uses-permission android:name="android.permission.FLASHLIGHT" />
+29-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:21:5-69
+29-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:21:22-66
+30    <!-- Barcode(二维码)  end -->
+31
+32    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+32-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:24:5-73
+32-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:24:22-71
+33
+34    <!-- Maps(地图) begin -->
+35    <!-- Maps - 百度地图 begin -->
+36    <uses-permission android:name="android.permission.INTERNET" />
+36-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:28:5-67
+36-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:28:22-64
+37    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+37-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:17:5-81
+37-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:17:22-78
+38    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+38-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:30:5-81
+38-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:30:22-78
+39    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+39-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:31:5-79
+39-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:31:22-76
+40    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+40-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:32:5-73
+40-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:32:22-70
+41    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+41-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:33:5-79
+41-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:33:22-76
+42    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+42-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:34:5-76
+42-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:34:22-73
+43    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+43-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:35:5-75
+43-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:35:22-72
+44    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+44-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:36:5-84
+44-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:36:22-81
+45    <uses-permission android:name="android.permission.READ_LOGS" />
+45-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:37:5-68
+45-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:37:22-65
+46    <!-- Maps(地图) end -->
+47
+48
+49    <!-- Push(推送)只能选择一个推送组件 -->
+50    <!-- Push(推送)-MKeyPush begin -->
+51    <!--
+52    <uses-permission android:name="android.permission.INTERNET"/>
+53    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+54    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+55    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+56    -->
+57    <!-- Push(推送)-MKeyPush  end -->
+58
+59
+60    <!-- 小米推送 -->
+61    <!--
+62    <uses-permission android:name="android.permission.INTERNET"/>
+63    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+64    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+65    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+66    <uses-permission android:name="android.permission.GET_TASKS"/>
+67    <uses-permission android:name="android.permission.VIBRATE"/>
+68    <uses-permission android:name="android.permission.GET_TASKS"/>
+69    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+70    <uses-permission android:name="android.permission.GET_TOP_ACTIVITY_INFO"/>
+71    <uses-permission android:name="com.HBuilder.integrate.permission.MIPUSH_RECEIVE"/>
+72    <permission android:name="com.HBuilder.integrate.permission.MIPUSH_RECEIVE" android:protectionLevel="signature"/>
+73    -->
+74    <!-- 小米推送 end -->
+75
+76
+77    <!-- Share(分享)  begin -->
+78    <!-- Share - 新浪微博分享 -->
+79    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+79-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:34:5-76
+79-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:34:22-73
+80    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+80-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:71:5-76
+80-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:71:22-73
+81    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+81-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:33:5-79
+81-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:33:22-76
+82    <!-- Share - 腾讯微博分享 -->
+83    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+83-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:33:5-79
+83-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:33:22-76
+84    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+84-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:71:5-76
+84-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:71:22-73
+85    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+85-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:34:5-76
+85-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:34:22-73
+86    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+86-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:30:5-81
+86-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:30:22-78
+87    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+87-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:31:5-79
+87-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:31:22-76
+88    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+88-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:79:5-79
+88-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:79:22-76
+89    <!-- Share - 微信分享 -->
+90    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+90-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:81:5-80
+90-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:81:22-77
+91    <!-- Push(推送)   end -->
+92
+93
+94    <!-- Speech(语音识别)  begin -->
+95    <!-- Speech - 讯飞语音云 -->
+96    <uses-permission android:name="android.permission.INTERNET" />
+96-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:28:5-67
+96-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:28:22-64
+97    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+97-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:17:5-81
+97-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:17:22-78
+98    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+98-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:89:5-71
+98-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:89:22-68
+99    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+99-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:33:5-79
+99-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:33:22-76
+100    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+100-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:71:5-76
+100-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:71:22-73
+101    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+101-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:92:5-79
+101-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:92:22-76
+102    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+102-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:35:5-75
+102-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:35:22-72
+103    <!-- Speech(语音识别)  end -->
+104
+105
+106    <!-- Statistic(统计)  begin -->
+107    <!-- Statistic - 友盟统计 -->
+108    <uses-permission android:name="android.permission.READ_LOGS" />
+108-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:37:5-68
+108-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:37:22-65
+109    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+109-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:100:5-81
+109-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:100:22-78
+110    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+110-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:101:5-79
+110-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:101:22-76
+111    <!-- Statistic(统计)  end -->
+112
+113
+114    <!-- 小米分享 -->
+115    <uses-permission android:name="com.xiaomi.permission.AUTH_SERVICE" />
+115-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:105:5-74
+115-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:105:22-71
+116
+117    <!-- 蓝牙 ibeacon权限 -->
+118    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+118-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:30:5-81
+118-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:30:22-78
+119    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+119-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:31:5-79
+119-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:31:22-76
+120    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+120-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:110:5-74
+120-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:110:22-71
+121    <uses-permission android:name="android.permission.BLUETOOTH" />
+121-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:111:5-68
+121-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:111:22-65
+122
+123    <!-- 基座删除的部分权限 -->
+124    <uses-permission android:name="android.permission.GET_TASKS" />
+124-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:114:5-68
+124-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:114:22-65
+125    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+125-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:92:5-79
+125-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:92:22-76
+126    <uses-permission android:name="android.permission.READ_CONTACTS" />
+126-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:116:5-72
+126-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:116:22-69
+127    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+127-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:71:5-76
+127-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:71:22-73
+128
+129    <uses-feature android:name="android.hardware.camera.autofocus" />
+129-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:19:5-70
+129-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:19:19-67
+130
+131    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+131-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:119:5-73
+131-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:119:22-70
+132    <uses-permission android:name="android.permission.CAMERA" />
+132-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:16:5-65
+132-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:16:22-62
+133    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+133-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:121:5-71
+133-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:121:22-68
+134    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+134-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:89:5-71
+134-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:89:22-68
+135    <uses-permission android:name="android.permission.SEND_SMS" />
+135-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:123:5-67
+135-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:123:22-64
+136    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+136-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:35:5-75
+136-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:35:22-72
+137    <uses-permission android:name="android.permission.FLASHLIGHT" />
+137-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:21:5-69
+137-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:21:22-66
+138
+139    <uses-feature android:name="android.hardware.camera" />
+139-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:18:5-60
+139-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:18:19-57
+140
+141    <uses-permission android:name="android.permission.WRITE_SMS" />
+141-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:127:5-68
+141-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:127:22-65
+142    <uses-permission android:name="android.permission.READ_SMS" />
+142-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:128:5-67
+142-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:128:22-64
+143
+144    <!-- 适配android 13 图片选择权限 -->
+145    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+145-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:17:5-76
+145-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:17:22-73
+146    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+146-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:18:5-75
+146-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:18:22-72
+147    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
+147-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:19:5-90
+147-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:19:22-87
+148    <!--
+149    <uses-permission
+150        android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+151    -->
+152    <!-- 华为修改角标需要设置权限 -->
+153    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" /> <!-- vivo 修改角标需要设置权限 -->
+153-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:27:5-91
+153-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:27:22-88
+154    <uses-permission android:name="com.vivo.notification.permission.BADGE_ICON" />
+154-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:29:5-83
+154-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:29:22-80
+155
+156    <queries>
+156-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:31:5-40:15
+157        <intent>
+157-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:32:9-34:18
+158            <action android:name="android.intent.action.MAIN" />
+158-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:148:17-69
+158-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:148:25-66
+159        </intent>
+160        <intent>
+160-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:35:9-39:18
+161            <action android:name="android.intent.action.VIEW" />
+161-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:193:17-69
+161-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:193:25-66
+162
+163            <category android:name="android.intent.category.DEFAULT" />
+163-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:195:17-76
+163-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:195:27-73
+164        </intent>
+165
+166        <package android:name="com.tencent.mm" />
+166-->[share-weixin-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/f59dca58be785ea517b75fb0c1b7a689/transformed/jetified-share-weixin-release/AndroidManifest.xml:8:9-50
+166-->[share-weixin-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/f59dca58be785ea517b75fb0c1b7a689/transformed/jetified-share-weixin-release/AndroidManifest.xml:8:18-47
+167
+168        <intent> <!-- H5 支持手淘登录 -->
+168-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:10:9-14:18
+169            <action android:name="*" />
+169-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:11:13-40
+169-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:11:21-37
+170
+171            <data android:scheme="tbopen" />
+171-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:198:17-51
+171-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:198:23-48
+172        </intent>
+173
+174        <package android:name="com.eg.android.AlipayGphone" /> <!-- 支付宝 app -->
+174-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:16:9-63
+174-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:16:18-60
+175        <package android:name="com.eg.android.AlipayGphoneRC" /> <!-- 沙箱支付宝 app -->
+175-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:17:9-65
+175-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:17:18-62
+176        <package android:name="hk.alipay.wallet" />
+176-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:18:9-52
+176-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:18:18-49
+177    </queries>
+178
+179    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+180    <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS" />
+180-->[oaid_sdk_1.0.25.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/37225f62f7c0a001d2f2772a87df635b/transformed/jetified-oaid_sdk_1.0.25/AndroidManifest.xml:13:5-76
+180-->[oaid_sdk_1.0.25.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/37225f62f7c0a001d2f2772a87df635b/transformed/jetified-oaid_sdk_1.0.25/AndroidManifest.xml:13:22-73
+181    <uses-permission android:name="freemme.permission.msa" />
+181-->[oaid_sdk_1.0.25.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/37225f62f7c0a001d2f2772a87df635b/transformed/jetified-oaid_sdk_1.0.25/AndroidManifest.xml:15:5-62
+181-->[oaid_sdk_1.0.25.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/37225f62f7c0a001d2f2772a87df635b/transformed/jetified-oaid_sdk_1.0.25/AndroidManifest.xml:15:22-59
+182    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+182-->[com.umeng.umsdk:common:9.6.1] /Users/guqianxiang/.gradle/caches/8.13/transforms/fefdde03e4b5bf957a814113db490f49/transformed/jetified-common-9.6.1/AndroidManifest.xml:11:5-79
+182-->[com.umeng.umsdk:common:9.6.1] /Users/guqianxiang/.gradle/caches/8.13/transforms/fefdde03e4b5bf957a814113db490f49/transformed/jetified-common-9.6.1/AndroidManifest.xml:11:22-76
+183    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> <!-- 应用列表 -->
+183-->[cn.jiguang.sdk:jverification:3.4.0] /Users/guqianxiang/.gradle/caches/8.13/transforms/77384b95178c93ca5584465552862186/transformed/jetified-jverification-3.4.0/AndroidManifest.xml:19:5-85
+183-->[cn.jiguang.sdk:jverification:3.4.0] /Users/guqianxiang/.gradle/caches/8.13/transforms/77384b95178c93ca5584465552862186/transformed/jetified-jverification-3.4.0/AndroidManifest.xml:19:22-82
+184    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+184-->[cn.jiguang.sdk:jverification:3.4.0] /Users/guqianxiang/.gradle/caches/8.13/transforms/77384b95178c93ca5584465552862186/transformed/jetified-jverification-3.4.0/AndroidManifest.xml:22:5-77
+184-->[cn.jiguang.sdk:jverification:3.4.0] /Users/guqianxiang/.gradle/caches/8.13/transforms/77384b95178c93ca5584465552862186/transformed/jetified-jverification-3.4.0/AndroidManifest.xml:22:22-74
+185
+186    <application
+186-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:130:5-310:19
+187        android:name="io.dcloud.application.DCloudApplication"
+187-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:131:9-63
+188        android:allowClearUserData="true"
+188-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:132:9-42
+189        android:allowNativeHeapPointerTagging="false"
+189-->[weex_amap-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/15c3987b31b2f9780c503833775b476d/transformed/jetified-weex_amap-release/AndroidManifest.xml:7:18-63
+190        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+190-->[androidx.core:core:1.1.0] /Users/guqianxiang/.gradle/caches/8.13/transforms/3d679ac34033b7b7e46c1be96b16219e/transformed/core-1.1.0/AndroidManifest.xml:24:18-86
+191        android:debuggable="true"
+191-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:136:9-34
+192        android:extractNativeLibs="true"
+193        android:icon="@drawable/icon"
+193-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:133:9-38
+194        android:label="@string/app_name"
+194-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:134:9-41
+195        android:largeHeap="true"
+195-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:135:9-33
+196        android:networkSecurityConfig="@xml/network_security_config"
+196-->[cn.jiguang.sdk:jverification:3.4.0] /Users/guqianxiang/.gradle/caches/8.13/transforms/77384b95178c93ca5584465552862186/transformed/jetified-jverification-3.4.0/AndroidManifest.xml:24:18-78
+197        android:supportsRtl="true"
+197-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:174:9-35
+198        android:testOnly="true"
+199        android:usesCleartextTraffic="true" >
+199-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:175:9-44
+200        <activity
+200-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:137:9-151:20
+201            android:name="io.dcloud.PandoraEntry"
+201-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:138:13-50
+202            android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+202-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:139:13-83
+203            android:exported="true"
+203-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:145:13-36
+204            android:hardwareAccelerated="true"
+204-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:142:13-47
+205            android:label="@string/app_name"
+205-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:140:13-45
+206            android:launchMode="singleTask"
+206-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:141:13-44
+207            android:screenOrientation="user"
+207-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:144:13-45
+208            android:theme="@style/TranslucentTheme"
+208-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:143:13-52
+209            android:windowSoftInputMode="adjustResize" >
+209-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:146:13-55
+210            <intent-filter>
+210-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:147:13-150:29
+211                <action android:name="android.intent.action.MAIN" />
+211-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:148:17-69
+211-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:148:25-66
+212
+213                <category android:name="android.intent.category.LAUNCHER" />
+213-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:149:17-77
+213-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:149:27-74
+214            </intent-filter>
+215        </activity>
+216
+217        <!-- Statistic(统计)-友盟统计 begin -->
+218        <!-- 官方网站：http://www.umeng.com/analytics -->
+219        <!-- meta-data节点android:name="UMENG_APPKEY"项中android:value值为友盟网站申请的APPKEY -->
+220        <!-- meta-data节点android:name="UMENG_CHANNEL"项中android:value值为发行渠道标识，可任意取值，用于各种发行渠道效果统计 -->
+221        <meta-data
+221-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:157:9-159:40
+222            android:name="UMENG_APPKEY"
+222-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:158:13-40
+223            android:value="友盟appkey" />
+223-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:159:13-37
+224        <meta-data
+224-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:160:9-162:36
+225            android:name="UMENG_CHANNEL"
+225-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:161:13-41
+226            android:value="友盟渠道" />
+226-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:162:13-33
+227        <!-- 友盟统计  配置  end -->
+228
+229
+230        <!-- Maps(地图) begin -->
+231        <!-- meta-data节点android:name="com.baidu.lbsapi.API_KEY"项中android:value值为百度地图应用的Appkey -->
+232        <meta-data
+232-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:167:9-169:36
+233            android:name="com.baidu.lbsapi.API_KEY"
+233-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:168:13-52
+234            android:value="百度key" />
+234-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:169:13-34
+235        <!--  -->
+236        <service
+236-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:171:9-174:40
+237            android:name="com.baidu.location.f"
+237-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:172:13-48
+238            android:enabled="true"
+238-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:173:13-35
+239            android:process=":remote" />
+239-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:174:13-38
+240        <!-- Maps(地图) end -->
+241        <meta-data
+241-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:176:9-177:63
+242            android:name="com.amap.api.v2.apikey"
+242-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:176:20-57
+243            android:value="47e729510a3ff63a11da62fe901af0a5" />
+243-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:177:13-61
+244
+245        <service android:name="com.amap.api.location.APSService" />
+245-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:178:9-68
+245-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:178:18-65
+246
+247        <!-- Oauth 授权登陆 start -->
+248        <!-- Oauth QQ start -->
+249        <!-- QQ 分享 配置和授权登陆相同 -->
+250        <meta-data
+250-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:183:9-185:40
+251            android:name="QQ_APPID"
+251-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:184:13-36
+252            android:value="QQ的appid" />
+252-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:185:13-37
+253
+254        <activity
+254-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:187:9-200:20
+255            android:name="com.tencent.tauth.AuthActivity"
+255-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:188:13-58
+256            android:exported="true"
+256-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:190:13-36
+257            android:launchMode="singleTask"
+257-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:189:13-44
+258            android:noHistory="true" >
+258-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:191:13-37
+259            <intent-filter>
+259-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:192:13-199:29
+260                <action android:name="android.intent.action.VIEW" />
+260-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:193:17-69
+260-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:193:25-66
+261
+262                <category android:name="android.intent.category.DEFAULT" />
+262-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:195:17-76
+262-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:195:27-73
+263                <category android:name="android.intent.category.BROWSABLE" />
+263-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:196:17-78
+263-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:196:27-75
+264
+265                <data android:scheme="QQ的appid" />
+265-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:198:17-51
+265-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:198:23-48
+266            </intent-filter>
+267        </activity>
+268        <activity
+268-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:201:9-204:75
+269            android:name="com.tencent.connect.common.AssistActivity"
+269-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:202:13-69
+270            android:screenOrientation="portrait"
+270-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:203:13-49
+271            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+271-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:204:13-72
+272        <!-- Oauth QQ end -->
+273
+274
+275        <!-- Oauth Sina start -->
+276
+277
+278        <!-- Oauth Sina end -->
+279        <!-- Oauth 授权登陆 end -->
+280
+281
+282        <!-- Share(分享) begin -->
+283        <!-- Share - 新浪微博分享 -->
+284        <!-- 官方网站：http://open.weibo.com/ -->
+285        <meta-data
+285-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:217:9-219:39
+286            android:name="SINA_REDIRECT_URI"
+286-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:218:13-45
+287            android:value="微博的回调地址" />
+287-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:219:13-36
+288        <meta-data
+288-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:220:9-222:41
+289            android:name="SINA_SECRET"
+289-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:221:13-39
+290            android:value="微博的secret" />
+290-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:222:13-38
+291        <meta-data
+291-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:223:9-225:42
+292            android:name="SINA_APPKEY"
+292-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:224:13-39
+293            android:value="_微博的appkey" />
+293-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:225:13-39
+294        <!-- 分享 -->
+295
+296
+297        <!-- 微信分享 配置begin -->
+298        <meta-data
+298-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:229:9-95
+299            android:name="WX_SECRET"
+299-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:229:69-93
+300            android:value="5d1ddede57c137999d083e3c01b948b5" />
+300-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:229:20-68
+301        <meta-data
+301-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:230:9-80
+302            android:name="WX_APPID"
+302-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:230:55-78
+303            android:value="wx3aeba17397e7136d" />
+303-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:230:20-54
+304
+305        <activity
+305-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:231:9-239:20
+306            android:name="com.cheryge.greenenergy.wxapi.WXEntryActivity"
+306-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:231:19-79
+307            android:exported="true"
+307-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:233:13-36
+308            android:label="@string/app_name"
+308-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:232:13-45
+309            android:launchMode="singleTop" >
+309-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:234:13-43
+310            <intent-filter>
+310-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:235:13-238:29
+311                <action android:name="android.intent.action.VIEW" />
+311-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:193:17-69
+311-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:193:25-66
+312
+313                <category android:name="android.intent.category.DEFAULT" />
+313-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:195:17-76
+313-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:195:27-73
+314
+315                <data android:scheme="wx3aeba17397e7136d" />
+315-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:198:17-51
+315-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:198:23-48
+316            </intent-filter>
+317        </activity>
+318        <!-- 微信分享 配置 end -->
+319
+320
+321        <!-- 微信支付配置 start -->
+322        <activity
+322-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:243:9-246:46
+323            android:name="com.cheryge.greenenergy.wxapi.WXPayEntryActivity"
+323-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:244:13-53
+324            android:exported="true"
+324-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:245:13-36
+325            android:launchMode="singleTop" />
+325-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:246:13-43
+326
+327        <!-- 微信支付配置end -->
+328        <!-- 小米分享 -->
+329        <meta-data
+329-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:250:9-252:45
+330            android:name="MIUI_APPID"
+330-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:251:13-38
+331            android:value="_%小米分享的APPID%" />
+331-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:252:13-42
+332        <meta-data
+332-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:253:9-255:48
+333            android:name="MIUI_APPSECRET"
+333-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:254:13-42
+334            android:value="%小米分享的appSecret%" />
+334-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:255:13-45
+335        <meta-data
+335-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:256:9-258:43
+336            android:name="MIUI_REDIRECT_URI"
+336-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:257:13-45
+337            android:value="%小米分享的回调地址%" />
+337-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:258:13-40
+338
+339        <activity android:name="com.xiaomi.account.openauth.AuthorizeActivity" />
+339-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:260:9-82
+339-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:260:19-79
+340        <!-- 小米分享 end -->
+341        <!--
+342        Dcloud 开屏广告配置>
+343        <meta-data android:name="DCLOUD_STREAMAPP_CHANNEL" android:value="io.dcloud.H57BCF8D2|H57BCF8D2|12331280401"></meta-data>
+344        <meta-data android:name="DCLOUD_AD_ID" android:value="-553621487"></meta-data>
+345        <meta-data android:name="DCLOUD_AD_SPLASH" android:value="true"></meta-data>
+346        < Dcloud 开屏广告配置
+347        -->
+348        <!-- 百度语音识别 start -->
+349        <meta-data
+349-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:268:9-87
+350            android:name="com.baidu.speech.APP_ID"
+350-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:268:20-58
+351            android:value="百度语音的appid" />
+351-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:268:59-85
+352        <meta-data
+352-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:269:9-89
+353            android:name="com.baidu.speech.API_KEY"
+353-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:269:20-59
+354            android:value="百度语音的appkey" />
+354-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:269:60-87
+355        <meta-data
+355-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:270:9-92
+356            android:name="com.baidu.speech.SECRET_KEY"
+356-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:270:20-62
+357            android:value="百度语音的secret" />
+357-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:270:63-90
+358
+359        <service
+359-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:271:9-101
+360            android:name="com.baidu.speech.VoiceRecognitionService"
+360-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:271:18-73
+361            android:exported="false" />
+361-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:271:74-98
+362        <!-- 百度语音识别 end -->
+363
+364        <activity
+364-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:274:9-299:20
+365            android:name="io.dcloud.PandoraEntryActivity"
+365-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:275:13-58
+366            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc|fontScale|keyboard|smallestScreenSize|screenLayout|screenSize|uiMode"
+366-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:277:13-151
+367            android:exported="true"
+367-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:282:13-36
+368            android:hardwareAccelerated="true"
+368-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:278:13-47
+369            android:launchMode="singleTask"
+369-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:276:13-44
+370            android:permission="com.miui.securitycenter.permission.AppPermissionsEditor"
+370-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:279:13-89
+371            android:screenOrientation="user"
+371-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:280:13-45
+372            android:theme="@style/DCloudTheme"
+372-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:281:13-47
+373            android:windowSoftInputMode="adjustResize" >
+373-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:283:13-55
+374            <intent-filter>
+374-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:285:13-298:29
+375                <category android:name="android.intent.category.DEFAULT" />
+375-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:195:17-76
+375-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:195:27-73
+376                <category android:name="android.intent.category.BROWSABLE" />
+376-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:196:17-78
+376-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:196:27-75
+377
+378                <action android:name="android.intent.action.VIEW" />
+378-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:193:17-69
+378-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:193:25-66
+379
+380                <data android:scheme=" " />
+380-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:198:17-51
+380-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:198:23-48
+381            </intent-filter>
+382        </activity>
+383        <!-- 极光认证 -->
+384        <meta-data
+384-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:301:9-303:56
+385            android:name="JPUSH_APPKEY"
+385-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:302:13-40
+386            android:value="08c5bb74081fe4785fddf992" />
+386-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:303:13-53
+387        <meta-data
+387-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:304:9-306:49
+388            android:name="JPUSH_CHANNEL"
+388-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:305:13-41
+389            android:value="default_developer" />
+389-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:306:13-46
+390        <meta-data
+390-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:307:9-309:64
+391            android:name="dcloud_appkey"
+391-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:308:13-41
+392            android:value="45fc273151862dc36b3cb775a6a0e0e4" />
+392-->/Users/guqianxiang/Desktop/奇瑞绿能/App/uni_android/HBuilder-Integrate-AS/simpleDemo/src/main/AndroidManifest.xml:309:13-61
+393        <!--
+394        <activity
+395            android:name="io.dcloud.imagepick.CustomGalleryActivity"
+396            android:noHistory="true"
+397            android:exported="false"/>
+398        -->
+399        <activity
+399-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:184:9-190:56
+400            android:name="io.dcloud.feature.nativeObj.photoview.PhotoActivity"
+400-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:185:13-79
+401            android:configChanges="orientation|keyboardHidden"
+401-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:186:13-63
+402            android:exported="false"
+402-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:187:13-37
+403            android:noHistory="false"
+403-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:188:13-38
+404            android:screenOrientation="behind"
+404-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:189:13-47
+405            android:theme="@style/DCloudTheme.Light" />
+405-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:190:13-53
+406        <activity
+406-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:191:9-200:58
+407            android:name="io.dcloud.WebAppActivity"
+407-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:192:13-52
+408            android:configChanges="orientation|keyboard|keyboardHidden|smallestScreenSize|screenLayout|screenSize|mcc|mnc|fontScale|navigation"
+408-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:193:13-144
+409            android:hardwareAccelerated="true"
+409-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:194:13-47
+410            android:icon="@drawable/dcloud_recent"
+410-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:195:13-51
+411            android:label="@string/stream_my"
+411-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:196:13-46
+412            android:launchMode="singleTask"
+412-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:197:13-44
+413            android:screenOrientation="portrait"
+413-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:198:13-49
+414            android:theme="@style/DCloudTheme"
+414-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:199:13-47
+415            android:windowSoftInputMode="adjustResize" />
+415-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:200:13-55
+416        <activity
+416-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:201:9-205:75
+417            android:name="io.dcloud.ProcessMediator"
+417-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:202:13-53
+418            android:excludeFromRecents="true"
+418-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:203:13-46
+419            android:exported="false"
+419-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:204:13-37
+420            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+420-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:205:13-72
+421        <activity
+421-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:206:9-212:20
+422            android:name="io.dcloud.WebviewActivity"
+422-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:207:13-53
+423            android:exported="false"
+423-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:208:13-37
+424            android:screenOrientation="portrait"
+424-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:209:13-49
+425            android:theme="@style/AppCompat.ThemeNoTitleBar"
+425-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:210:13-61
+426            android:windowSoftInputMode="adjustPan" >
+426-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:211:13-52
+427        </activity> <!-- gallery******start -->
+428        <activity
+428-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:215:9-220:63
+429            android:name="com.dmcbig.mediapicker.PickerActivity"
+429-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:216:13-65
+430            android:configChanges="orientation|screenSize"
+430-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:217:13-59
+431            android:exported="false"
+431-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:218:13-37
+432            android:theme="@style/DeviceDefault.Light"
+432-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:219:13-55
+433            android:windowSoftInputMode="stateAlwaysHidden" />
+433-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:220:13-60
+434        <activity
+434-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:221:9-226:63
+435            android:name="com.dmcbig.mediapicker.PreviewActivity"
+435-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:222:13-66
+436            android:configChanges="orientation|screenSize"
+436-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:223:13-59
+437            android:exported="false"
+437-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:224:13-37
+438            android:theme="@style/DeviceDefault.Light"
+438-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:225:13-55
+439            android:windowSoftInputMode="stateAlwaysHidden" /> <!-- gallery******end -->
+439-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:226:13-60
+440        <provider
+440-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:229:9-237:20
+441            android:name="io.dcloud.common.util.DCloud_FileProvider"
+441-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:230:13-69
+442            android:authorities="com.cheryge.greenenergy.dc.fileprovider"
+442-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:231:13-67
+443            android:exported="false"
+443-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:232:13-37
+444            android:grantUriPermissions="true" >
+444-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:233:13-47
+445            <meta-data
+445-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:234:13-236:64
+446                android:name="android.support.FILE_PROVIDER_PATHS"
+446-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:235:17-67
+447                android:resource="@xml/dcloud_file_provider" />
+447-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:236:17-61
+448        </provider>
+449        <!--
+450            <meta-data
+451            android:name="DCLOUD_STREAMAPP_CHANNEL"
+452            android:value="io.dcloud.%APPID%|%APPID%|" />
+453        -->
+454        <meta-data
+454-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:244:9-246:35
+455            android:name="android.max_aspect"
+455-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:245:13-46
+456            android:value="2.4" />
+456-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:246:13-32
+457
+458        <activity
+458-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:248:9-253:63
+459            android:name="io.dcloud.feature.gallery.imageedit.IMGEditActivity"
+459-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:249:13-79
+460            android:configChanges="orientation|keyboardHidden|screenSize"
+460-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:250:13-74
+461            android:exported="false"
+461-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:251:13-37
+462            android:theme="@style/ImageEditTheme"
+462-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:252:13-50
+463            android:windowSoftInputMode="stateAlwaysHidden" /> <!-- 广告相关配置开始 -->
+463-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:253:13-60
+464        <activity
+464-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:256:9-261:55
+465            android:name="io.dcloud.sdk.activity.WebViewActivity"
+465-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:257:13-66
+466            android:exported="false"
+466-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:258:13-37
+467            android:screenOrientation="portrait"
+467-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:259:13-49
+468            android:theme="@style/ThemeNoTitleBar"
+468-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:260:13-51
+469            android:windowSoftInputMode="adjustPan" />
+469-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:261:13-52
+470
+471        <service
+471-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:263:9-266:72
+472            android:name="io.dcloud.sdk.base.service.DownloadService"
+472-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:264:13-70
+473            android:exported="false"
+473-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:265:13-37
+474            android:permission="android.permission.BIND_JOB_SERVICE" />
+474-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:266:13-69
+475
+476        <provider
+476-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:268:9-276:20
+477            android:name="io.dcloud.sdk.base.service.provider.DCloudAdFileProvider"
+477-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:269:13-84
+478            android:authorities="com.cheryge.greenenergy.dc.fileprovider"
+478-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:270:13-67
+479            android:exported="false"
+479-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:271:13-37
+480            android:grantUriPermissions="true" >
+480-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:272:13-47
+481            <meta-data
+481-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:234:13-236:64
+482                android:name="android.support.FILE_PROVIDER_PATHS"
+482-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:235:17-67
+483                android:resource="@xml/dcloud_gg_file_provider" />
+483-->[lib.5plus.base-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/d341242a4719498d8ac2b3b28ee43b1c/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:236:17-61
+484        </provider>
+485
+486        <receiver
+486-->[uniapp-v8-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/e09d8e17eb935c6e811fcac06f20d242/transformed/jetified-uniapp-v8-release/AndroidManifest.xml:28:9-32:20
+487            android:name="com.taobao.weex.WXGlobalEventReceiver"
+487-->[uniapp-v8-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/e09d8e17eb935c6e811fcac06f20d242/transformed/jetified-uniapp-v8-release/AndroidManifest.xml:29:13-65
+488            android:enabled="true"
+488-->[uniapp-v8-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/e09d8e17eb935c6e811fcac06f20d242/transformed/jetified-uniapp-v8-release/AndroidManifest.xml:30:13-35
+489            android:exported="false" >
+489-->[uniapp-v8-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/e09d8e17eb935c6e811fcac06f20d242/transformed/jetified-uniapp-v8-release/AndroidManifest.xml:31:13-37
+490        </receiver>
+491
+492        <activity
+492-->[share-weixin-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/f59dca58be785ea517b75fb0c1b7a689/transformed/jetified-share-weixin-release/AndroidManifest.xml:12:9-16:57
+493            android:name="io.dcloud.share.mm.WXShareProcessMeadiatorActivity"
+493-->[share-weixin-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/f59dca58be785ea517b75fb0c1b7a689/transformed/jetified-share-weixin-release/AndroidManifest.xml:13:13-78
+494            android:excludeFromRecents="true"
+494-->[share-weixin-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/f59dca58be785ea517b75fb0c1b7a689/transformed/jetified-share-weixin-release/AndroidManifest.xml:14:13-46
+495            android:exported="false"
+495-->[share-weixin-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/f59dca58be785ea517b75fb0c1b7a689/transformed/jetified-share-weixin-release/AndroidManifest.xml:15:13-37
+496            android:theme="@style/ProjectDialogTheme" />
+496-->[share-weixin-release.aar] /Users/guqianxiang/.gradle/caches/8.13/transforms/f59dca58be785ea517b75fb0c1b7a689/transformed/jetified-share-weixin-release/AndroidManifest.xml:16:13-54
+497
+498        <uses-library
+498-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:33:9-35:40
+499            android:name="org.apache.http.legacy"
+499-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:34:13-50
+500            android:required="false" />
+500-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:35:13-37
+501
+502        <activity
+502-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:37:9-42:20
+503            android:name="com.alipay.sdk.app.H5PayActivity"
+503-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:38:13-60
+504            android:configChanges="orientation|keyboardHidden|navigation|screenSize|locale|keyboard|screenLayout|density|fontScale|layoutDirection|smallestScreenSize"
+504-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:39:13-167
+505            android:exported="false"
+505-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:40:13-37
+506            android:theme="@android:style/Theme.NoTitleBar" >
+506-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:41:13-60
+507        </activity>
+508        <activity
+508-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:43:9-48:20
+509            android:name="com.alipay.sdk.app.H5AuthActivity"
+509-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:44:13-61
+510            android:configChanges="orientation|keyboardHidden|navigation|screenSize|locale|keyboard|screenLayout|density|fontScale|layoutDirection|smallestScreenSize"
+510-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:45:13-167
+511            android:exported="false"
+511-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:46:13-37
+512            android:theme="@android:style/Theme.NoTitleBar" >
+512-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:47:13-60
+513        </activity>
+514        <activity
+514-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:49:9-55:20
+515            android:name="com.alipay.sdk.app.PayResultActivity"
+515-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:50:13-64
+516            android:configChanges="orientation|keyboardHidden|navigation|screenSize|locale|keyboard|screenLayout|density|fontScale|layoutDirection|smallestScreenSize"
+516-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:51:13-167
+517            android:exported="true"
+517-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:52:13-36
+518            android:launchMode="singleInstance"
+518-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:53:13-48
+519            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+519-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:54:13-72
+520        </activity>
+521        <activity
+521-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:56:9-62:20
+522            android:name="com.alipay.sdk.app.AlipayResultActivity"
+522-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:57:13-67
+523            android:configChanges="orientation|keyboardHidden|navigation|screenSize|locale|keyboard|screenLayout|density|fontScale|layoutDirection|smallestScreenSize"
+523-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:58:13-167
+524            android:exported="true"
+524-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:59:13-36
+525            android:launchMode="singleTask"
+525-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:60:13-44
+526            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+526-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:61:13-72
+527        </activity>
+528        <activity
+528-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:63:9-69:20
+529            android:name="com.alipay.sdk.app.H5OpenAuthActivity"
+529-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:64:13-65
+530            android:configChanges="orientation|keyboardHidden|navigation|screenSize|locale|keyboard|screenLayout|density|fontScale|layoutDirection|smallestScreenSize"
+530-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:65:13-167
+531            android:exported="false"
+531-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:66:13-37
+532            android:screenOrientation="behind"
+532-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:67:13-47
+533            android:windowSoftInputMode="adjustResize|stateHidden" >
+533-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:68:13-67
+534        </activity>
+535        <activity
+535-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:70:9-75:20
+536            android:name="com.alipay.sdk.app.APayEntranceActivity"
+536-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:71:13-67
+537            android:configChanges="orientation|keyboardHidden|navigation|screenSize|locale|keyboard|screenLayout|density|fontScale|layoutDirection|smallestScreenSize"
+537-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:72:13-167
+538            android:exported="false"
+538-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:73:13-37
+539            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+539-->[com.alipay.sdk:alipaysdk-android:15.8.11] /Users/guqianxiang/.gradle/caches/8.13/transforms/27b7be89c549ffb6247be55cfa1cea0b/transformed/jetified-alipaysdk-android-15.8.11/AndroidManifest.xml:74:13-72
+540        </activity> <!-- 3.1.7新增 前后台状态精准度修复 -->
+541        <provider
+541-->[cn.jiguang.sdk:jverification:3.4.0] /Users/guqianxiang/.gradle/caches/8.13/transforms/77384b95178c93ca5584465552862186/transformed/jetified-jverification-3.4.0/AndroidManifest.xml:27:9-30:40
+542            android:name="cn.jpush.android.service.InitProvider"
+542-->[cn.jiguang.sdk:jverification:3.4.0] /Users/guqianxiang/.gradle/caches/8.13/transforms/77384b95178c93ca5584465552862186/transformed/jetified-jverification-3.4.0/AndroidManifest.xml:28:13-65
+543            android:authorities="com.cheryge.greenenergy.jiguang.InitProvider"
+543-->[cn.jiguang.sdk:jverification:3.4.0] /Users/guqianxiang/.gradle/caches/8.13/transforms/77384b95178c93ca5584465552862186/transformed/jetified-jverification-3.4.0/AndroidManifest.xml:29:13-72
+544            android:exported="false" /> <!-- since 2.0.0 optional 可选项，使用一键登录功能必须添加 -->
+544-->[cn.jiguang.sdk:jverification:3.4.0] /Users/guqianxiang/.gradle/caches/8.13/transforms/77384b95178c93ca5584465552862186/transformed/jetified-jverification-3.4.0/AndroidManifest.xml:30:13-37
+545        <!-- since 2.1.1 optional 可选项，通过screenOrientation设置授权页面横竖屏展示 -->
+546        <activity
+546-->[cn.jiguang.sdk:jverification:3.4.0] /Users/guqianxiang/.gradle/caches/8.13/transforms/77384b95178c93ca5584465552862186/transformed/jetified-jverification-3.4.0/AndroidManifest.xml:34:9-40:20
+547            android:name="com.cmic.gen.sdk.view.GenLoginAuthActivity"
+547-->[cn.jiguang.sdk:jverification:3.4.0] /Users/guqianxiang/.gradle/caches/8.13/transforms/77384b95178c93ca5584465552862186/transformed/jetified-jverification-3.4.0/AndroidManifest.xml:35:13-70
+548            android:configChanges="orientation|keyboardHidden|screenSize"
+548-->[cn.jiguang.sdk:jverification:3.4.0] /Users/guqianxiang/.gradle/caches/8.13/transforms/77384b95178c93ca5584465552862186/transformed/jetified-jverification-3.4.0/AndroidManifest.xml:36:13-74
+549            android:launchMode="singleTop"
+549-->[cn.jiguang.sdk:jverification:3.4.0] /Users/guqianxiang/.gradle/caches/8.13/transforms/77384b95178c93ca5584465552862186/transformed/jetified-jverification-3.4.0/AndroidManifest.xml:37:13-43
+550            android:screenOrientation="unspecified"
+550-->[cn.jiguang.sdk:jverification:3.4.0] /Users/guqianxiang/.gradle/caches/8.13/transforms/77384b95178c93ca5584465552862186/transformed/jetified-jverification-3.4.0/AndroidManifest.xml:38:13-52
+551            android:theme="@style/ActivityDialogStyle" >
+551-->[cn.jiguang.sdk:jverification:3.4.0] /Users/guqianxiang/.gradle/caches/8.13/transforms/77384b95178c93ca5584465552862186/transformed/jetified-jverification-3.4.0/AndroidManifest.xml:39:13-55
+552        </activity> <!-- since 2.0.0 optional 可选项，使用一键登录功能必须添加 -->
+553        <!-- since 2.1.1 optional 可选项，通过screenOrientation设置授权页面横竖屏展示 -->
+554        <activity
+554-->[cn.jiguang.sdk:jverification:3.4.0] /Users/guqianxiang/.gradle/caches/8.13/transforms/77384b95178c93ca5584465552862186/transformed/jetified-jverification-3.4.0/AndroidManifest.xml:43:9-49:20
+555            android:name="cn.jiguang.verifysdk.CtLoginActivity"
+555-->[cn.jiguang.sdk:jverification:3.4.0] /Users/guqianxiang/.gradle/caches/8.13/transforms/77384b95178c93ca5584465552862186/transformed/jetified-jverification-3.4.0/AndroidManifest.xml:44:13-64
+556            android:configChanges="orientation|keyboardHidden|screenSize"
+556-->[cn.jiguang.sdk:jverification:3.4.0] /Users/guqianxiang/.gradle/caches/8.13/transforms/77384b95178c93ca5584465552862186/transformed/jetified-jverification-3.4.0/AndroidManifest.xml:45:13-74
+557            android:launchMode="singleTop"
+557-->[cn.jiguang.sdk:jverification:3.4.0] /Users/guqianxiang/.gradle/caches/8.13/transforms/77384b95178c93ca5584465552862186/transformed/jetified-jverification-3.4.0/AndroidManifest.xml:46:13-43
+558            android:screenOrientation="unspecified"
+558-->[cn.jiguang.sdk:jverification:3.4.0] /Users/guqianxiang/.gradle/caches/8.13/transforms/77384b95178c93ca5584465552862186/transformed/jetified-jverification-3.4.0/AndroidManifest.xml:47:13-52
+559            android:theme="@style/ActivityDialogStyle" >
+559-->[cn.jiguang.sdk:jverification:3.4.0] /Users/guqianxiang/.gradle/caches/8.13/transforms/77384b95178c93ca5584465552862186/transformed/jetified-jverification-3.4.0/AndroidManifest.xml:48:13-55
+560        </activity>
+561        <activity
+561-->[cn.jiguang.sdk:jverification:3.4.0] /Users/guqianxiang/.gradle/caches/8.13/transforms/77384b95178c93ca5584465552862186/transformed/jetified-jverification-3.4.0/AndroidManifest.xml:50:9-55:58
+562            android:name="cn.jiguang.verifysdk.SmsLoginActivity"
+562-->[cn.jiguang.sdk:jverification:3.4.0] /Users/guqianxiang/.gradle/caches/8.13/transforms/77384b95178c93ca5584465552862186/transformed/jetified-jverification-3.4.0/AndroidManifest.xml:51:13-65
+563            android:configChanges="orientation|keyboardHidden|screenSize"
+563-->[cn.jiguang.sdk:jverification:3.4.0] /Users/guqianxiang/.gradle/caches/8.13/transforms/77384b95178c93ca5584465552862186/transformed/jetified-jverification-3.4.0/AndroidManifest.xml:52:13-74
+564            android:launchMode="singleTop"
+564-->[cn.jiguang.sdk:jverification:3.4.0] /Users/guqianxiang/.gradle/caches/8.13/transforms/77384b95178c93ca5584465552862186/transformed/jetified-jverification-3.4.0/AndroidManifest.xml:53:13-43
+565            android:screenOrientation="unspecified"
+565-->[cn.jiguang.sdk:jverification:3.4.0] /Users/guqianxiang/.gradle/caches/8.13/transforms/77384b95178c93ca5584465552862186/transformed/jetified-jverification-3.4.0/AndroidManifest.xml:54:13-52
+566            android:theme="@style/ActivityDialogStyle" />
+566-->[cn.jiguang.sdk:jverification:3.4.0] /Users/guqianxiang/.gradle/caches/8.13/transforms/77384b95178c93ca5584465552862186/transformed/jetified-jverification-3.4.0/AndroidManifest.xml:55:13-55
+567
+568        <meta-data
+568-->[cn.jiguang.sdk:jcore:5.2.8] /Users/guqianxiang/.gradle/caches/8.13/transforms/37f831a6c964ebaf3dc4ef369923e4e5/transformed/jetified-jcore-5.2.8/AndroidManifest.xml:12:9-14:37
+569            android:name="JCORE_VT"
+569-->[cn.jiguang.sdk:jcore:5.2.8] /Users/guqianxiang/.gradle/caches/8.13/transforms/37f831a6c964ebaf3dc4ef369923e4e5/transformed/jetified-jcore-5.2.8/AndroidManifest.xml:13:13-36
+570            android:value="r5280" />
+570-->[cn.jiguang.sdk:jcore:5.2.8] /Users/guqianxiang/.gradle/caches/8.13/transforms/37f831a6c964ebaf3dc4ef369923e4e5/transformed/jetified-jcore-5.2.8/AndroidManifest.xml:14:13-34
+571    </application>
+572
+573</manifest>
